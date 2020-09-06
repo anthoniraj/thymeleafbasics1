@@ -1,0 +1,10 @@
+Thymeleaf Basic Attributes
+
+Whats is Thymeleaf ? - It is a Server Side Template Engine
+    - Used for Creating Dynamic Web Pages
+    - Spring Controller will speak with HTML using Thymeleaf
+
+Attributes (Predefined)
+    th:text
+    th:if
+    th:each

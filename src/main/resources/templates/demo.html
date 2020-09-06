@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thymeleaf Basics</title>
+</head>
+<body>
+   <div style="background-color: bisque; color: brown;">
+        <h3 th:text="${temp}"></h3>
+        <h4 th:if="${flag == true}">Display only if flag is true!</h4>
+        <table style="border-style: solid; border-width: 2px; border-color: green;">
+            <th>
+                <td>Employee Name</td>
+            </th>
+            <tr th:each="emp : ${employee}">
+                <td th:text="${emp}"></td>
+            </tr>
+        </table>
+   </div>
+</body>
+</html>
